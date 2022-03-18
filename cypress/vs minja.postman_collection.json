@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "17745072-8137-4647-b6e4-c29f6a11f4b3",
+		"name": "vs minja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"bla123@bla.com\",\r\n    \"password\": \"bla12345\",\r\n    \"g-recaptcha-response\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cypress-api.vivifyscrum-stage.com/api/v2/login",
+					"protocol": "https",
+					"host": [
+						"cypress-api",
+						"vivifyscrum-stage",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"login"
+					]
+				},
+				"description": "LOGIN"
+			},
+			"response": []
+		}
+	]
+}
