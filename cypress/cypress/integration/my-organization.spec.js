@@ -24,4 +24,11 @@ describe("login test", () => {
     });
     cy.url().should("contain", "/my-organizations");
   });
+  it("delete ogranization", () => {
+    myOrganizations.deleteOrganization("bla12345");
+  });
+
+  xit("logout", () => {
+    logOut.logoutButton();
+  });
 });
